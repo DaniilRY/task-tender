@@ -1,0 +1,145 @@
+@font-face {
+	font-family: 'Alumni Sans'; 
+	src: url(fonts/AlumniSans-Regular.ttf)
+	format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Sarpanch'; 
+	src: url(fonts/Sarpanch-Regular.ttf)
+	format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 0px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #00899D;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+	top: 0;
+    width: 100%;
+	position: sticky;
+}
+
+body {
+	font-family: "Alumni Sans", sans-serif;
+	font-size: 20px;
+}
+
+.first-ul li {
+	display: inline;
+	margin-right: 10px;
+}
+
+H1 {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+.first-ul li a {
+	list-style: none;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 32px;
+	font-family: 'Sarpanch', sans-serif;
+    margin-right: 20px;
+}
+
+.second-ul {
+    margin-left: 40px;
+	margin-right: 20px;
+    list-style-type: none;
+    padding: 0;
+	text-align: center;
+}
+
+.btn1:hover {
+	font-weight: bolder;
+}
+.btn2:hover {
+	font-weight: bolder;
+}
+.btn3:hover {
+	font-weight: bolder;
+}
+.btn4:hover {
+	font-weight: bolder;
+}
+
+.third-ul {
+	margin-left: auto;
+	margin-right: 40px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.second-ul li {
+    display: inline;
+    margin-right: 50px;
+}
+
+.second-ul li a {
+	font-size: 25px;
+	font-family: "Alumni Sans", sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.third-ul li {
+	display: inline;
+	margin-right: 10px;
+}
+
+.image-button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-image: url('log.svg');
+  background-color: transparent;
+  background-size: cover;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.top-menu {
+    display: inline-block;
+    justify-content: space-around;
+	text-align: center;
+}
+
+
+.footer-blocks {
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-block {
+    padding: 10px 20px;
+	flex: 1;
+}
+
+.copyright {
+    margin-top: 20px;
+}
