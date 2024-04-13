@@ -23,12 +23,14 @@ header {
 nav {
     background-color: #00899D;
     display: flex;
-    align-items: center;
-    justify-content: left;
     top: 0;
+    left: 0;
     width: 100%;
     position: sticky;
-    overflow-x: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+	text-align: center;
+    align-items: center;
 }
 
 body {
@@ -124,9 +126,7 @@ footer {
 
 
 .top-menu {
-    display: inline-block;
-    justify-content: space-around;
-	text-align: center;
+
 }
 
 
