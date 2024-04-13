@@ -25,9 +25,10 @@ nav {
     display: flex;
     align-items: center;
     justify-content: left;
-	top: 0;
+    top: 0;
     width: 100%;
-	position: sticky;
+    position: sticky;
+    overflow-x: auto;
 }
 
 body {
