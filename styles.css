@@ -22,7 +22,7 @@ header {
 
 nav {
 	display:inline-flex;
-    background-color: #00899D;
+    background-color: #705CD9;
     top: 0;
     left: 0;
     width: 100%;
@@ -122,7 +122,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #f0f0f0;
+    background-color: #DFDBF5;
     padding: 20px;
     text-align: center;
 }
@@ -137,13 +137,51 @@ footer {
     display: flex;
 	flex-wrap: wrap;
     justify-content: space-around;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center; 
 }
 
 .footer-block {
     padding: 10px 20px;
 	flex: 1;
+    text-decoration: none;
+}
+
+.rect_img {
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center; 
+    margin: 0 auto;
 }
 
 .copyright {
     margin-top: 20px;
+}
+
+.container {
+    flex: 2; /* Занимаем 2/3 ширины родительского блока */
+    max-width: 66.666%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.text {
+    margin-left: 20px; /* Регулируйте отступ справа от SVG изображения */
+}
+
+.rectangle {
+    flex: 2; /* Занимаем 2/3 ширины родительского блока */
+    max-width: 66.666%;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    background-color: #FAFAFA;/* Цвет прямоугольника */
+    border: 2px solid #D3CFEA;
+    border-radius: 10px; /* Задание изогнутых углов */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
