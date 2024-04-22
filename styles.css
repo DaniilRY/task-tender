@@ -199,3 +199,18 @@ footer {
     border-radius: 10px; /* Задание изогнутых углов */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+ 
+.tx{
+    word-wrap: break-word; 
+}
+
+@media (max-width: 768px) {
+    .tx {
+        word-wrap: break-word; 
+        width: 100%;
+    }
+
+    .rectangle{
+        max-width: 100%;
+    }
+}
