@@ -134,18 +134,34 @@ footer {
 
 
 .footer-blocks {
+    flex: 2; /* Занимаем 2/3 ширины родительского блока */
+    max-width: 66.666%;
+    margin: 0 auto;
     display: flex;
 	flex-wrap: wrap;
     justify-content: space-around;
     text-decoration: none;
     justify-content: center;
     align-items: center; 
+    overflow: hidden;
 }
 
 .footer-block {
     padding: 10px 20px;
 	flex: 1;
     text-decoration: none;
+}
+
+.rg-block {
+    padding: 10px 20px;
+    flex: 1;
+    text-decoration: none;
+    display: flex; /* Используем flexbox внутри .footer-block */
+    align-items: center; /* Выравниваем содержимое по вертикали */
+}
+
+.text {
+    flex: 1; /* Занимаем всю доступную ширину внутри .footer-block */
 }
 
 .rect_img {
@@ -165,13 +181,11 @@ footer {
     flex: 2; /* Занимаем 2/3 ширины родительского блока */
     max-width: 66.666%;
     margin: 0 auto;
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center; 
-}
-
-.text {
-    margin-left: 20px; /* Регулируйте отступ справа от SVG изображения */
+    align-items: flex; /* Выравнивание по верхнему краю */
+    flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
 }
 
 .rectangle {
