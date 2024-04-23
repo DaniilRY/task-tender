@@ -179,7 +179,7 @@ footer {
 
 .container {
     flex: 2; /* Занимаем 2/3 ширины родительского блока */
-    max-width: 66.666%;
+    max-width: 80.666%;
     margin: 0 auto;
     width: 100%;
     display: flex;
@@ -190,7 +190,7 @@ footer {
 
 .rectangle {
     flex: 2; /* Занимаем 2/3 ширины родительского блока */
-    max-width: 66.666%;
+    max-width: 80.666%;
     margin: 0 auto;
     width: 100%;
     height: auto;
