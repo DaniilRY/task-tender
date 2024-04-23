@@ -22,15 +22,17 @@ header {
 
 nav {
 	display:inline-flex;
-    background-color: #705CD9;
-    top: 0;
+    flex-wrap: wrap;
     left: 0;
+    top: 0;
     width: 100%;
+    background-color: #705CD9;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
     position: sticky;
     justify-content: space-around;
-    flex-wrap: wrap;
-	text-align: center;
-    align-items: center;
+    z-index: 1000; 
 }
 
 body {
@@ -134,7 +136,7 @@ footer {
 
 
 .footer-blocks {
-    flex: 2; /* Занимаем 2/3 ширины родительского блока */
+    flex: 2;
     max-width: 66.666%;
     margin: 0 auto;
     display: flex;
@@ -156,12 +158,12 @@ footer {
     padding: 10px 20px;
     flex: 1;
     text-decoration: none;
-    display: flex; /* Используем flexbox внутри .footer-block */
-    align-items: center; /* Выравниваем содержимое по вертикали */
+    display: flex;
+    align-items: center;
 }
 
 .text {
-    flex: 1; /* Занимаем всю доступную ширину внутри .footer-block */
+    flex: 1;
 }
 
 .rect_img {
@@ -178,30 +180,73 @@ footer {
 }
 
 .container {
-    flex: 2; /* Занимаем 2/3 ширины родительского блока */
+    flex: 2;
     max-width: 80.666%;
     margin: 0 auto;
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex; /* Выравнивание по верхнему краю */
-    flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+    align-items: flex;
+    flex-wrap: wrap;
 }
 
 .rectangle {
-    flex: 2; /* Занимаем 2/3 ширины родительского блока */
+    flex: 2;
     max-width: 80.666%;
     margin: 0 auto;
     width: 100%;
     height: auto;
-    background-color: #FAFAFA;/* Цвет прямоугольника */
+    background-color: #FAFAFA;
     border: 2px solid #D3CFEA;
-    border-radius: 10px; /* Задание изогнутых углов */
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    position: relative;
+}
+
+.rectangle .btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #705CD9;
+    color: white;
+    font-family: "Alumni Sans", sans-serif;
+	font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: font-weight 0.3s;
+}
+
+.rectangle .btn:hover {
+    font-weight: bold; 
+}
+
+.rectangle .btn2 {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #FC8D3C;
+    color: white;
+    font-family: "Alumni Sans", sans-serif;
+	font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: font-weight 0.3s;
+}
+
+.rectangle .btn2:hover {
+    font-weight: bold; 
 }
  
 .tx{
     word-wrap: break-word; 
+    margin-bottom: 90px;
 }
 
 @media (max-width: 768px) {
